@@ -1,0 +1,2 @@
+# YOLOv8-PySide6-GUI
+YOLO系列模型GUI
