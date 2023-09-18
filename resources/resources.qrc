@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="all">
+    <file>../imgs/pause.png</file>
+    <file>../imgs/model.png</file>
+    <file>../imgs/save.png</file>
+    <file>../imgs/check_yes.png</file>
+    <file>../imgs/check_no.png</file>
+    <file>../imgs/delay.png</file>
+    <file>../imgs/conf.png</file>
+    <file>../imgs/box_down.png</file>
+    <file>../imgs/box_up.png</file>
+    <file>../imgs/IOU.png</file>
+    <file>../imgs/stop.png</file>
+    <file>../imgs/begin.png</file>
+    <file>../imgs/set.png</file>
+    <file>../imgs/menu.png</file>
+    <file>../imgs/file.png</file>
+    <file>../imgs/cam.png</file>
+    <file>../imgs/logo.png</file>
+    <file>../imgs/RTSP.png</file>
+  </qresource>
+</RCC>

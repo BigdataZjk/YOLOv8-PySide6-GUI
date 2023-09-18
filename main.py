@@ -39,6 +39,7 @@ class YoloPredictor(BasePredictor, QObject):
         super(YoloPredictor, self).__init__() 
         QObject.__init__(self)
 
+
         self.args = get_cfg(cfg, overrides)
         project = self.args.project or Path(SETTINGS['runs_dir']) / self.args.task
         name = f'{self.args.mode}'
@@ -76,7 +77,7 @@ class YoloPredictor(BasePredictor, QObject):
         self.callbacks = defaultdict(list, callbacks.default_callbacks)  # add callbacks
         callbacks.add_integration_callbacks(self)
 
-    # resources for detect
+    # main for detect
     @smart_inference_mode()
     def run(self):
         try:
@@ -295,7 +296,7 @@ class YoloPredictor(BasePredictor, QObject):
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
-    main2yolo_begin_sgl = Signal()  # The resources window sends an execution signal to the yolo instance
+    main2yolo_begin_sgl = Signal()  # The main window sends an execution signal to the yolo instance
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
         # basic interface
@@ -312,8 +313,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
         # read model folder
-        self.pt_list = os.listdir('models')
-        self.pt_list = [file for file in self.pt_list if file.endswith('.pt')]
+        self.pt_list = os.listdir('./models')
+        self.pt_list = [file for file in self.pt_list]
         self.pt_list.sort(key=lambda x: os.path.getsize('./models/' + x))   # sort by file size
         self.model_box.clear()
         self.model_box.addItems(self.pt_list)
@@ -370,7 +371,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # initialization
         self.load_config()
 
-    # The resources window displays the original image and detection results
+    # The main window displays the original image and detection results
     @staticmethod
     def show_image(img_src, label):
         try:
@@ -445,7 +446,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     # select local file
     def open_src_file(self):
-        config_file = 'config/fold.json'
+        config_file = 'config/fold.json'    
         config = json.load(open(config_file, 'r', encoding='utf-8'))
         open_fold = config['open_fold']     
         if not os.path.exists(open_fold):
@@ -649,7 +650,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     # Cycle monitoring model file changes
     def ModelBoxRefre(self):
-        pt_list = os.listdir('models')
+        pt_list = os.listdir('./models')
         pt_list = [file for file in pt_list if file.endswith('.pt')]
         pt_list.sort(key=lambda x: os.path.getsize('./models/' + x))
         # It must be sorted before comparing, otherwise the list will be refreshed all the time

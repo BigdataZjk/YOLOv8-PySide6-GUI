@@ -1,15 +1,26 @@
 # -*- coding: utf-8 -*-
 
-from PySide6.QtCore import (QCoreApplication, QMetaObject, QRect,
-                            QSize, Qt)
-from PySide6.QtGui import (QCursor,
-                           QFont, QIcon)
-from PySide6.QtWidgets import (QCheckBox, QComboBox, QDoubleSpinBox,
-                               QFrame, QHBoxLayout, QLabel, QLayout,
-                               QProgressBar, QPushButton, QSizePolicy,
-                               QSlider, QSpacerItem, QSpinBox, QSplitter,
-                               QVBoxLayout, QWidget)
+################################################################################
+## Form generated from reading UI file 'home.ui'
+##
+## Created by: Qt User Interface Compiler version 6.4.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDoubleSpinBox,
+    QFrame, QHBoxLayout, QLabel, QLayout,
+    QMainWindow, QProgressBar, QPushButton, QSizePolicy,
+    QSlider, QSpacerItem, QSpinBox, QSplitter,
+    QVBoxLayout, QWidget)
+import resources.resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -65,7 +76,7 @@ class Ui_MainWindow(object):
         self.logo.setSizePolicy(sizePolicy)
         self.logo.setMinimumSize(QSize(50, 50))
         self.logo.setMaximumSize(QSize(50, 50))
-        self.logo.setStyleSheet(u"image: url(:/all/img/logo.png);\n"
+        self.logo.setStyleSheet(u"image: url(:/all/imgs/logo.png);\n"
 "border:2px solid rgb(255, 255, 255);\n"
 "border-radius:10px")
         self.Author = QLabel(self.TopLogoInfo)
@@ -120,7 +131,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton.setLayoutDirection(Qt.LeftToRight)
         self.ToggleBotton.setAutoFillBackground(False)
         self.ToggleBotton.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/menu.png);\n"
+"background-image: url(:/all/imgs/menu.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -167,7 +178,7 @@ class Ui_MainWindow(object):
         self.src_file_button.setMinimumSize(QSize(0, 45))
         self.src_file_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.src_file_button.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/file.png);\n"
+"background-image: url(:/all/imgs/file.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -190,7 +201,7 @@ class Ui_MainWindow(object):
         self.src_cam_button.setMinimumSize(QSize(0, 45))
         self.src_cam_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.src_cam_button.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/cam.png);\n"
+"background-image: url(:/all/imgs/cam.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -214,7 +225,7 @@ class Ui_MainWindow(object):
         self.src_rtsp_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.src_rtsp_button.setAutoFillBackground(False)
         self.src_rtsp_button.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/RTSP.png);\n"
+"background-image: url(:/all/imgs/RTSP.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -313,7 +324,7 @@ class Ui_MainWindow(object):
         self.settings_button.setMaximumSize(QSize(16777215, 20))
         self.settings_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.settings_button.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/set.png);\n"
+"background-image: url(:/all/imgs/set.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: center;\n"
 "border: none;\n"
@@ -833,8 +844,8 @@ class Ui_MainWindow(object):
 "\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u":/all/img/begin.png", QSize(), QIcon.Normal, QIcon.Off)
-        icon1.addFile(u":/all/img/pause.png", QSize(), QIcon.Normal, QIcon.On)
+        icon1.addFile(u":/all/imgs/begin.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/all/imgs/pause.png", QSize(), QIcon.Normal, QIcon.On)
         self.run_button.setIcon(icon1)
         self.run_button.setIconSize(QSize(30, 30))
         self.run_button.setCheckable(True)
@@ -871,7 +882,7 @@ class Ui_MainWindow(object):
         self.stop_button.setMaximumSize(QSize(16777215, 30))
         self.stop_button.setCursor(QCursor(Qt.PointingHandCursor))
         self.stop_button.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/stop.png);\n"
+"background-image: url(:/all/imgs/stop.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: center;\n"
 "border: none;\n"
@@ -946,7 +957,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton_6.setLayoutDirection(Qt.LeftToRight)
         self.ToggleBotton_6.setAutoFillBackground(False)
         self.ToggleBotton_6.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/model.png);\n"
+"background-image: url(:/all/imgs/model.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -996,11 +1007,11 @@ class Ui_MainWindow(object):
 "        QComboBox::down-arrow {\n"
 "            width: 16px;\n"
 "            height: 16px;\n"
-"            image: url(:/all/img/box_down.png);\n"
+"            image: url(:/all/imgs/box_down.png);\n"
 "        }\n"
 "\n"
 "        QComboBox::down-arrow:on {\n"
-"            image: url(:/all/img/box_up.png);\n"
+"            image: url(:/all/imgs/box_up.png);\n"
 "        }\n"
 "\n"
 "        QComboBox QAbstractI"
@@ -1052,7 +1063,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton_2.setLayoutDirection(Qt.LeftToRight)
         self.ToggleBotton_2.setAutoFillBackground(False)
         self.ToggleBotton_2.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/IOU.png);\n"
+"background-image: url(:/all/imgs/IOU.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -1094,7 +1105,7 @@ class Ui_MainWindow(object):
 "width: 10px;\n"
 "height: 9px;\n"
 "margin: 0px 3px 0px 0px;\n"
-"border-image: url(:/all/img/box_up.png);\n"
+"border-image: url(:/all/imgs/box_up.png);\n"
 "}\n"
 "QDoubleSpinBox::up-button:pressed {\n"
 "margin-top: 1px;\n"
@@ -1104,7 +1115,7 @@ class Ui_MainWindow(object):
 "width: 10px;\n"
 "height: 9px;\n"
 "margin: 0px 3px 0px 0px;\n"
-"border-image: url(:/all/img/box_down.png);\n"
+"border-image: url(:/all/imgs/box_down.png);\n"
 "}\n"
 "QDoubleSpinBox::down-button:pressed {\n"
 "margin-bottom: 1px;\n"
@@ -1174,7 +1185,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton_3.setLayoutDirection(Qt.LeftToRight)
         self.ToggleBotton_3.setAutoFillBackground(False)
         self.ToggleBotton_3.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/conf.png);\n"
+"background-image: url(:/all/imgs/conf.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -1216,7 +1227,7 @@ class Ui_MainWindow(object):
 "width: 10px;\n"
 "height: 9px;\n"
 "margin: 0px 3px 0px 0px;\n"
-"border-image: url(:/all/img/box_up.png);\n"
+"border-image: url(:/all/imgs/box_up.png);\n"
 "}\n"
 "QDoubleSpinBox::up-button:pressed {\n"
 "margin-top: 1px;\n"
@@ -1226,7 +1237,7 @@ class Ui_MainWindow(object):
 "width: 10px;\n"
 "height: 9px;\n"
 "margin: 0px 3px 0px 0px;\n"
-"border-image: url(:/all/img/box_down.png);\n"
+"border-image: url(:/all/imgs/box_down.png);\n"
 "}\n"
 "QDoubleSpinBox::down-button:pressed {\n"
 "margin-bottom: 1px;\n"
@@ -1296,7 +1307,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton_4.setLayoutDirection(Qt.LeftToRight)
         self.ToggleBotton_4.setAutoFillBackground(False)
         self.ToggleBotton_4.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/delay.png);\n"
+"background-image: url(:/all/imgs/delay.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -1337,7 +1348,7 @@ class Ui_MainWindow(object):
 "width: 10px;\n"
 "height: 9px;\n"
 "margin: 0px 3px 0px 0px;\n"
-"border-image: url(:/all/img/box_up.png);\n"
+"border-image: url(:/all/imgs/box_up.png);\n"
 "}\n"
 "QSpinBox::up-button:pressed {\n"
 "margin-top: 1px;\n"
@@ -1347,7 +1358,7 @@ class Ui_MainWindow(object):
 "width: 10px;\n"
 "height: 9px;\n"
 "margin: 0px 3px 0px 0px;\n"
-"border-image: url(:/all/img/box_down.png);\n"
+"border-image: url(:/all/imgs/box_down.png);\n"
 "}\n"
 "QSpinBox::down-button:pressed {\n"
 "margin-bottom: 1px;\n"
@@ -1415,7 +1426,7 @@ class Ui_MainWindow(object):
         self.ToggleBotton_5.setLayoutDirection(Qt.LeftToRight)
         self.ToggleBotton_5.setAutoFillBackground(False)
         self.ToggleBotton_5.setStyleSheet(u"QPushButton{\n"
-"background-image: url(:/all/img/save.png);\n"
+"background-image: url(:/all/imgs/save.png);\n"
 "background-repeat: no-repeat;\n"
 "background-position: left center;\n"
 "border: none;\n"
@@ -1450,11 +1461,11 @@ class Ui_MainWindow(object):
 "        }\n"
 "\n"
 "        QCheckBox::indicator:unchecked {\n"
-"            image: url(:/all/img/check_no.png);\n"
+"            image: url(:/all/imgs/check_no.png);\n"
 "        }\n"
 "\n"
 "        QCheckBox::indicator:checked {\n"
-"            image: url(:/all/img/check_yes.png);\n"
+"            image: url(:/all/imgs/check_yes.png);\n"
 "        }")
 
         self.verticalLayout_20.addWidget(self.save_res_button)
@@ -1476,11 +1487,11 @@ class Ui_MainWindow(object):
 "        }\n"
 "\n"
 "        QCheckBox::indicator:unchecked {\n"
-"            image: url(:/all/img/check_no.png);\n"
+"            image: url(:/all/imgs/check_no.png);\n"
 "        }\n"
 "\n"
 "        QCheckBox::indicator:checked {\n"
-"            image: url(:/all/img/check_yes.png);\n"
+"            image: url(:/all/imgs/check_yes.png);\n"
 "        }")
 
         self.verticalLayout_20.addWidget(self.save_txt_button)
@@ -1584,3 +1595,5 @@ class Ui_MainWindow(object):
         self.save_res_button.setText(QCoreApplication.translate("MainWindow", u"Save MP4/JPG", None))
         self.save_txt_button.setText(QCoreApplication.translate("MainWindow", u"Save Labels(.txt)", None))
         self.status_bar.setText(QCoreApplication.translate("MainWindow", u"Welcome!", None))
+    # retranslateUi
+
